@@ -1,12 +1,16 @@
 # Name: Video2X Configuration File
 # Creator: K4YT3X
-# Edited: lenardcarroll
+# Edited: btx4452
 # Date Created: October 23, 2018
 # Last Modified: February 19, 2022
 # Values here are the default values. Change the value here to
 #   save the default value permanently.
 # Items commented out are parameters irrelevant to this context
 #   or parameters handled by Video2X internally.
+
+# adapted for colabs: changed paths, disabled -g 0 for GPU 
+# because vuklkan fails
+
 waifu2x_ncnn_vulkan:
   path: '/content/video2x/waifu2x-ncnn-vulkan/waifu2x-ncnn-vulkan'
   v: null # verbose output
@@ -41,7 +45,7 @@ realsr_ncnn_vulkan:
   s: 4 # upscale ratio (4, default=4)
   t: 0 # tile size (>=32/0=auto, default=0)
   m: null # realsr model path (default=models-DF2K)
-  g: 0 # gpu device to use (default=0)
+ # g: 0 # gpu device to use (default=0)
   j: '1:2:2' # thread count for load/proc/save (default=1:2:2)
   x: false # enable tta mode
   #f: png # output image format (jpg/png/webp, default=ext/png)
